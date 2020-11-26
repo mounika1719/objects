@@ -1,0 +1,26 @@
+﻿*Write a function called “printAllValues” which returns an newArray of all the input object’s values.
+Input (Object):
+var object = {name: “RajiniKanth”, age: 33, hasPets : false};
+Output:
+[“RajiniKanth”, 33, false]
+
+my code:
+
+var obj={name:'mouni',age:33,haspets:false};
+
+
+function printallvalues(obj)
+ {
+ 
+   return obj;
+
+}
+
+
+var result=printallvalues(obj)
+
+console.log(Object.values(obj))
+
+ (3)
+output:
+ ["mouni", 33, false]

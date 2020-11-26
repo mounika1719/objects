@@ -1,0 +1,159 @@
+﻿*Fluffy sorry, Fluffyy is my fav cat and it has 2 catFriends
+Write a code to get the below details of Fluffyy so that
+I can take him to vet.
+
+program:
+
+var cat={ name: 'fluffy',
+activities:['play','eat cat food'],
+catfrnd:[ {name:'bar',activities:['be grumpy','eat'],
+weight:8,
+furcolor:'white'
+  },
+{
+name:'foo',
+activities:['sleep','presleepnap'],
+weight:3
+  }
+]}
+
+console.log(cat);
+
+
+output:
+
+ {name: "fluffy", activities: Array(2), catfrnd: Array(2)}
+
+1)Add height and weight to Fluffy
+
+
+
+
+cat.height=30;
+
+30
+
+cat.weight=5;
+
+5
+
+console.log(cat);
+
+2
+ {name: "fluffy", activities: Array(2), catfrnd: Array(2), height: 30, weight: 5}
+
+
+
+2)Fluffy name is spelled wrongly. Update it to Fluffyy
+
+cat.name="Fluffyy"
+
+"Fluffyy"
+
+console.log(cat)
+
+2 
+{name: "Fluffyy", activities: Array(2), catfrnd: Array(2), height: 30, weight: 5}
+
+
+3)List all the activities of Fluffyy’s catFriends.
+
+let output=[];
+
+
+for(let frnd in cat.catfrnd)
+{
+   
+ output.push(...cat.catfrnd[frnd].activities);
+}
+
+4
+
+console.log("activities of catfrnd"+output);
+
+ activities of catfrnd:be grumpy,eat,sleep,presleepnap
+
+
+4)Print the catFriends names.
+
+
+
+output=[];
+
+
+for(let i in cat.catfrnd)
+
+{
+  
+  output.push(cat.catfrnd[i].name)
+}
+
+2
+
+console.log("catfrnd names:"+ output)
+
+ catfrnd names:bar,foo
+
+
+5)Print the total weight of catFriends
+
+weight=cat.weight;
+
+
+for(let frnd in cat.catfrnd)
+
+{
+  
+
+    weight+=cat.catfrnd[frnd].weight;
+
+}
+
+16
+
+
+console.log("weight:"+weight);
+
+weight:16
+
+
+
+6)Print the total activities of all cats (op:6)
+
+output=[...cat.activities];
+
+(2) ["play", "eat cat food"]
+
+for(let frnd in cat.catfrnd)
+
+{
+ 
+  output.push(...cat.catfrnd[frnd].activities);
+
+}
+
+6
+
+console.log("activities:"+output)
+
+ activities:play,eat cat food,be grumpy,eat,sleep,presleepnap
+
+
+
+7)Add 2 more activities to bar & foo cats
+
+
+for(let frnd in cat.catfrnd)
+
+{
+  
+  cat.catfrnd[frnd].activities.push("scraching","chasing rats");
+}
+
+
+8)Update the fur color of bar
+
+cat.catfrnd[0].furcolor="brown"
+
+"brown"
+
